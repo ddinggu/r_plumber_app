@@ -1,0 +1,5 @@
+library(fst)
+
+source("model/dong_data.R", encoding = "UTF-8")
+
+write.fst(dong.rule, path = "data/dong_data.fst", compress = 50)

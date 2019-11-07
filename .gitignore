@@ -1,0 +1,9 @@
+# R project init files
+.Rproj.user
+.Rdata
+.Rhistory
+plumber.Rproj
+
+# data files
+data/*.rds
+data/*.fst
