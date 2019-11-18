@@ -1,4 +1,7 @@
-interest_dong_model <- read.fst('data/dong_data.fst')
+temp_file <- tempfile()
+save_object('dong_data.fst', bucket = "mechureal-realdata", file = temp_file)
+
+interest_dong_model <- read.fst(temp_file)
 
 ####
 # @params 

@@ -1,4 +1,7 @@
-interest_model_df  <- read.fst('data/arules_data.fst')
+temp_file <- tempfile()
+save_object('arules_data.fst', bucket = "mechureal-realdata", file = temp_file)
+
+interest_model_df  <- read.fst(temp_file)
 
 ####
 # @params 

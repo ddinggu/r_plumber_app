@@ -1,10 +1,10 @@
 source('utils/set_graph_caption.R')
 
-age_table <- readRDS('data/age_table.rds')
-sex_table <- readRDS('data/sex_table.rds')
-weath_table <- readRDS('data/weath_table.rds')
-week_table <- readRDS('data/week_table.rds')
-place_table <- readRDS('data/place_table.rds')
+age_table <- s3readRDS(object = "age_table.rds", bucket = "mechureal-realdata")
+sex_table <- s3readRDS(object = "sex_table.rds", bucket = "mechureal-realdata")
+weath_table <- s3readRDS(object = "weath_table.rds", bucket = "mechureal-realdata")
+week_table <- s3readRDS(object = "week_table.rds", bucket = "mechureal-realdata")
+place_table <- s3readRDS(object = "place_table.rds", bucket = "mechureal-realdata")
 
 default_graph_fn <- function() {
   data_framed_age <- set_graph_caption(age_table, '연령대별 주문한 음식', '주문횟수')

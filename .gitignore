@@ -9,3 +9,5 @@ plumber.Rproj
 data/*.rds
 data/*.fst
 
+# secret tokens
+.env
