@@ -1,7 +1,3 @@
-library(aws.s3)
-library(data.table)
-library(fst)
-
 ## get variables
 source("model/arules_data.R", encoding = "UTF-8")
 source("model/age_table.R", encoding = "UTF-8")
