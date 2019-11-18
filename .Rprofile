@@ -9,7 +9,7 @@ options(continue = "...")
 .First <- function(){
   cat("\n Welcome!!! \n")
     if(interactive()){
-      requiredPackages = c("aws.s3","plumber","ggtern", "data.table", "fst")
+      requiredPackages = c("aws.s3","plumber", "data.table", "fst")
 
       for(package in requiredPackages){
         if(!require(package, character.only = TRUE)) install.packages(package)
