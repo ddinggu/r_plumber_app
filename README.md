@@ -3,8 +3,8 @@
 ### 추후 업데이트
 
 1. Docker 이미지 관리
-2. Naver Cloud를 활용한 R 서버 배포
-3. Naver Object Store를 활용한 데이터 파일 간소화
+2. <del>Naver Cloud를 활용한 R 서버 배포</del>
+3. <del>Naver Object Store를 활용한 데이터 파일 간소화</del>
 4. Cloud Function을 활용한 자동화 기능
 
 ---

@@ -2,8 +2,10 @@
 .Rproj.user
 .Rdata
 .Rhistory
+.Renviron
 plumber.Rproj
 
 # data files
 data/*.rds
 data/*.fst
+

@@ -1,3 +1,4 @@
+library(aws.s3)
 library(data.table)
 library(fst)
 
@@ -17,3 +18,9 @@ saveRDS(place.table, file = 'data/place_table.rds')
 saveRDS(sex.table, file = 'data/sex_table.rds')
 saveRDS(weath.table, file = 'data/weath_table.rds')
 saveRDS(week.table, file = 'data/week_table.rds')
+
+put_object(file = 'data/arules_data.fst', object = 'arules_data.fst', bucket = 'mechureal-realdata')
+put_object(file = 'data/place_table.rds', object = 'place_table.rds', bucket = 'mechureal-realdata')
+put_object(file = 'data/sex_table.rds', object = 'sex_table.rds', bucket = 'mechureal-realdata')
+put_object(file = 'data/weath_table.rds', object = 'weath_table.rds', bucket = 'mechureal-realdata')
+put_object(file = 'data/week_table.rds', object = 'week_table.rds', bucket = 'mechureal-realdata')
