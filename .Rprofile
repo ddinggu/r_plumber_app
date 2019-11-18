@@ -2,19 +2,17 @@
 # .Rprofile.site가 상위에 위치하여 같이 시작된다.
 
 # General options
-options(encoding = 'UTF-8') 
-options(continue="...")
-
-setwd("/home/ddingu/plumber")
+options(encoding = "UTF-8") 
+options(continue = "...")
 
 # 세션 시작시 실행되는 함수
 .First <- function(){
   cat("\n Welcome!!! \n")
     if(interactive()){
-      requiredPackages = c('aws.s3','plumber','ggtern', 'data.table', 'fst')
+      requiredPackages = c("aws.s3","plumber","ggtern", "data.table", "fst")
 
       for(package in requiredPackages){
-        if(!require(package, character.only = TRUE)) install.packages(p)
+        if(!require(package, character.only = TRUE)) install.packages(package)
 
         library(package, character.only = TRUE)
       }
